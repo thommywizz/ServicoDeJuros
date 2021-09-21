@@ -8,5 +8,6 @@ namespace API.CaluladoraDeJuros
     public class ServiceSettings
     {
         public string TaxaDeJurosUri { get; set; }
+        public string GitHubUrl { get; set; }
     }
 }

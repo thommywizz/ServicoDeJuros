@@ -7,20 +7,23 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Globalization;
 using API.CaluladoraDeJuros.Services;
+using Microsoft.Extensions.Options;
 
 namespace API.CaluladoraDeJuros.Controllers
 {
-    [Route("calculajuros")]
     [ApiController]
     public class CalculaJurosController : ControllerBase
     {
         private readonly ICalculaJurosService _calculaJurosService;
+        private readonly ServiceSettings _settings;
 
-        public CalculaJurosController(ICalculaJurosService calculaJurosService)
+        public CalculaJurosController(ICalculaJurosService calculaJurosService, IOptions<ServiceSettings> options)
         {
             _calculaJurosService = calculaJurosService;
+            _settings = options.Value;
         }
         [HttpGet]
+        [Route("calculajuros")]
         public async Task<double> Get(int valorinicial, int meses)
         {
             if (valorinicial == 0 || meses == 0)
@@ -34,5 +37,9 @@ namespace API.CaluladoraDeJuros.Controllers
                 return await _calculaJurosService.ValorFuturo(valorinicial, meses);
             }
         }
+
+        [HttpGet]
+        [Route("showmethecode")]
+        public string GetCode() => _settings.GitHubUrl;
     }
 }
