@@ -21,10 +21,13 @@ namespace API.CaluladoraDeJuros.Services
         {
             try
             {
-                var juros = await _client.ObterTaxaDeJuros();
+                if (valorInicial <= 0)
+                    throw new ArgumentException("Valor inserido não é válido, valorInicial necessita ser maior que zero", "valorInicial");
 
-                if (juros == 0)
-                    throw new ApplicationException($"Valor de juros obtido zero. Juros:{juros}");
+                if(meses <= 0)
+                    throw new ArgumentException("Valor inserido não é válido, o número de meses necessita ser maior que zero", "meses");
+
+                var juros = await _client.ObterTaxaDeJuros();
 
                 return Math.Truncate(valorInicial * Math.Pow(1 + juros, meses) * 100) / 100;
             }
