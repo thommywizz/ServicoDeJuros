@@ -45,7 +45,7 @@ namespace API.CaluladoraDeJuros.Clients
             }
             catch (Exception ex)
             {
-                /* inserir a exception no log */
+                Console.WriteLine(ex.Message); /* inserir a exception no log */
                 throw; /* propagar o stack trace, ou substituir por throw ex para limpar o stack trace */
             }
         }

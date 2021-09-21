@@ -30,7 +30,7 @@ namespace API.CaluladoraDeJuros.Services
             }
             catch (Exception ex)
             {
-                /* inserir no log */
+                Console.WriteLine(ex.Message);/* inserir no log */
                 throw; /* propagar o stack trace, ou substituir por throw ex para limpar o stack trace */
             }
 
