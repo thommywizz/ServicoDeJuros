@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.TaxasDeJuros", "API.TaxasDeJuros\API.TaxasDeJuros.csproj", "{C4956415-AAB8-47CD-B80B-E1D44C55B778}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.CaluladoraDeJuros", "API.CaluladoraDeJuros\API.CaluladoraDeJuros.csproj", "{5EE60FC6-6EE1-4389-9497-12F5B998BEF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{75452E6C-9E96-47F9-9438-A5067DF2B3E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.API.CalculadoraDeJuros", "Test.API.CalculadoraDeJuros\Test.API.CalculadoraDeJuros.csproj", "{225ED9BE-D8C9-494B-B048-DA9D5859045F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF5C5ABF-48B7-49E7-ACF4-4F053CF9A57C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4956415-AAB8-47CD-B80B-E1D44C55B778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4956415-AAB8-47CD-B80B-E1D44C55B778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4956415-AAB8-47CD-B80B-E1D44C55B778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4956415-AAB8-47CD-B80B-E1D44C55B778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE60FC6-6EE1-4389-9497-12F5B998BEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE60FC6-6EE1-4389-9497-12F5B998BEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE60FC6-6EE1-4389-9497-12F5B998BEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE60FC6-6EE1-4389-9497-12F5B998BEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{225ED9BE-D8C9-494B-B048-DA9D5859045F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{225ED9BE-D8C9-494B-B048-DA9D5859045F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{225ED9BE-D8C9-494B-B048-DA9D5859045F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{225ED9BE-D8C9-494B-B048-DA9D5859045F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{225ED9BE-D8C9-494B-B048-DA9D5859045F} = {75452E6C-9E96-47F9-9438-A5067DF2B3E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFD8BC5F-3277-408C-B9F4-F5F8B85551B1}
+	EndGlobalSection
+EndGlobal
